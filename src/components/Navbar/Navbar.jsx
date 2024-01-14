@@ -15,10 +15,12 @@ const Navbar = () => {
     ]
     return (
         <div>
-            <nav>
-                <div className=""></div>
+            <nav className="flex justify-between items-center">
                 <div className="">
-                    <ul>
+                    <h1>Accordion</h1>
+                </div>
+                <div className="">
+                    <ul className="flex items-center gap-5">
                         {
                             navLinks.map(data => <li key={data.id}>
                                 <NavLink
@@ -33,7 +35,9 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div className=""></div>
+                <div className="">
+                    <h1>Login</h1>
+                </div>
             </nav>
         </div>
     );
